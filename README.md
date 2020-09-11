@@ -24,13 +24,13 @@
 
 ### Introduction
 
-In this guide we will walk through all the steps needed to set up our machine so we can then apply real-time object detection using **deep learning** and **OpenCV** to work with video streams and video files. In order to do that we will use the **VideoStream** class that comes with the **imutils** package**.**
+In this guide we will walk through all the steps needed to set up our machine so we can then apply real-time object detection using **deep learning** and **OpenCV** to work with video streams and video files. In order to do that we will use the **VideoStream** class that comes with the **imutils** package.
 
-Before we dive into the coding part, let’s first get our machine ready for implementation. For the purpose of this project, I ended up using Ubuntu as it was much more “error-less” to set up all the necessary packages. You can either use a dedicated Ubuntu installation or simply an Ubuntu Vmware one. I personally used both and they work just fine. Once you have an Ubuntu machine ready for use, you can proceed to setting up OpenCV.
+Before we dive into the coding part, let’s first get our machine ready for implementation. For the purpose of this project, I ended up using Ubuntu as it was much more “error-less” to set up all the necessary packages. You can either use a dedicated Ubuntu installation or simply an Ubuntu VMWare one. I personally used both and they work just fine. Once you have an Ubuntu machine ready for use, you can proceed to setting up OpenCV.
 
 ### Ubuntu 16+: How to install OpenCV
 
-Ubuntu 16+ ships with with both **python 2.7** and **python 3.5** installed. You can access them by typing the python or python3 commands accordingly in your terminal. The default python version used is the 2.7 one. However, we are going to set up OpenCV for both versions in case one prefers to work with python 2.7.
+Ubuntu 16+ ships with both **python 2.7** and **python 3.5** installed. You can access them by typing the `python` or `python3` commands accordingly in your terminal. The default python version used is the 2.7 one. However, we are going to set up OpenCV for both versions in case one prefers to work with python 2.7.
 
 #### #1. Install OpenCV dependencies.
 
@@ -45,7 +45,7 @@ Next, install some **developer tools**:
 ```
 $​ sudo apt-get install build-essential cmake pkg-config
 ```
-The pkg-config package will (very likely) be already installed on your system, but be sure to include it in the above apt-get command just in case. The **cmake** program is used to automatically configure our OpenCV build.
+The `pkg-config` package will (very likely) be already installed on your system, but be sure to include it in the above apt-get command just in case. The **cmake** program is used to automatically configure our OpenCV build.
 
 OpenCV is an **_image processing_** and **_computer vision_** library. Therefore, OpenCV needs to be able to load various image file formats from disk such as JPEG, PNG, TIFF etc. In order to load these images from our disk, OpenCV actually calls other image I/O libraries that facilitate the loading and decoding process. We will install the necessary ones below:
 
